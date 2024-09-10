@@ -1,0 +1,68 @@
+/* Paleta de cores (ajuste os valores conforme necessário) */
+:root {
+    --azul-claro: #F0F8FF;
+    --azul-medio: #ADD8E6;
+    --azul-escuro: #00008B;
+    --roxo-claro: #D8BFD8;
+    --roxo-medio: #8B008B;
+    --roxo-escuro: #4B0082;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--azul-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10;
+}
+
+main {
+    background-color: var(--azul-medio);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    align-items: center;
+}
+
+h1 {
+    color: var(--roxo-escuro);
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--roxo-medio);
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--roxo-medio);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+

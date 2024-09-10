@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Pedido</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <main>
+        <h1>Detalhes do Pedido #<span id="numero-pedido"></span></h1>
+        <table id="itens-pedido">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="total">
+            <p>Total: R$ <span id="total"></span></p>
+        </div>
+        <div class="status">
+            <p>Status do Pedido: <span id="status"></span></p>
+        </div>
+        <div class="historico">
+            <h2>Histórico do Pedido</h2>
+            <ul id="historico-lista"></ul>
+        </div>
+    </main>
+
+</body>
+</html>

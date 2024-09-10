@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> </head>
+<body>
+    <main>
+        <h1>Cadastro de Produto</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao"></textarea>
+
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" name="preco" required>
+
+            <label for="quantidadeMinima">Quantidade Mínima:</label>
+            <input type="number" id="quantidadeMinima" name="quantidadeMinima" required>
+
+            <label for="fornecedor">Fornecedor:</label>
+            <select id="fornecedor" name="fornecedor">
+                </select>
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria">
+                </select>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+  </body>
+</html>
